@@ -7,7 +7,7 @@ The STM32 board reads the ADC values in multi-channel and outputs to the DMA and
 
 The LCD uses the I2C pins on the board so make sure to set them up as a peripheral. 
 
-As the STM32 ADC is using a 12bit resolution, the number "4095" is the maximum it can count upto. Those moving in from programming for arduido are familiar with the 10bit ADC of max value "1023". This higher resolution is recommended because when reading the shunt voltage, the voltage difference across it is very less and the extra resolution helps get an accurate reading for calculating the current. 
+As the STM32 ADC is using a 12bit resolution, the number "4095" is the maximum it can count upto. Those moving in from programming for the Arduino Microcontroller are familiar with the 10bit ADC of max value "1023". This higher resolution is recommended because when reading the shunt voltage, the voltage difference across it is very less and the extra resolution helps get an accurate reading for calculating the current. 
 
 Components for this project include:
 * NUCLEO-F401RE
