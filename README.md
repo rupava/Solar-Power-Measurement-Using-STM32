@@ -39,8 +39,8 @@ And the equation checks out well for the voltage divider.
 ### **Shunt Resistor:**
 
 The requirements for a shunt resistor are fairly strightforward.
-1. The resistance of the resistor should be small enough to not add additional load  on the circuit.
-1. The voltage difference across the shunt reistance should be measureable by your ADC. A better resolution of ADC helps.
+1. The resistance of the resistor should be small enough to add negligible additional load  on the circuit.
+1. The voltage difference across the shunt reistance should be measureable by your ADC. A better resolution of ADC or a larger resistance helps.
 1. The resistor should be of a higher wattage because the current of the entire circuit will be flowing through it.
 
 Since we didnt have a heavy enough load for the circuit, we decided to go with a 100 Ohm 1/4 Watt reistor with a 5% tolerance.
