@@ -63,4 +63,4 @@ temp = ((tempADC * (5000 / 4095.0))/10)-10;
 
 The schematic below is what we have used for the project and the code is configured for the appropriate resistor values.
 
-![alt text]](https://github.com/rupava/Solar-Power-Management-Using-STM32/blob/main/Schematic_SPMS_2_2022-11-20.png)
+![schematic](https://github.com/rupava/Solar-Power-Management-Using-STM32/blob/main/Schematic_SPMS_2_2022-11-20.png)
