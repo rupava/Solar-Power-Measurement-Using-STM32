@@ -5,7 +5,7 @@ Completely written from scratch for NUCLEO-F401RE (STM32-F401RE) but since they 
 
 The STM32 board reads the ADC values in multi-channel and outputs to the DMA and at a modest frequency set by the the TIMER_2. The TIMER_2 acts as an EXTERNAL INTERRUPT as we are not using the Continuous Conversion Mode.
 
-The LCD uses the I2C pins on the board so make sure to set them up as a peripherel. 
+The LCD uses the I2C pins on the board so make sure to set them up as a peripheral. 
 
 Components for this project include:
 * NUCLEO-F401RE
