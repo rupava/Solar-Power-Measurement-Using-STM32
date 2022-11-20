@@ -41,7 +41,7 @@ The requirements for a shunt resistor are fairly strightforward.
 
 Since we didnt have a heavy enough load for the circuit, we decided to go with a 100 Ohm 1/4 Watt reistor with a 5% tolerance.
 
-### **Changes to the code:**
+## **Changes to the code:**
 
 After selecting the resistors and measuring them with a multimeter for absolute values. Make changes to the code on the _main.c_ file of the project. Under lines _74_ -
 
@@ -59,8 +59,20 @@ The LM35 used in our circuit had a +10° difference with the actual value of the
 ```
 temp = ((tempADC * (5000 / 4095.0))/10)-10;
 ```
-## Schematic:
+To calibrate the LDR for calculating LUX, make changes to the code on line _244_-
+```
+lux  = (luxADC/4095.0)*100;
+```
+The code above is an aproximation for lux values and is calibrated against a simple phone app. Could definately use better calibration equations.
 
+If you want to change when the High Temperature Alert LED triggers, make changes to the if condition on line _259_-
+```
+if(temp>60){
+		  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1,GPIO_PIN_SET);
+	  }
+```
+
+## Schematic:
 The schematic below is what we have used for the project and the code is configured for the appropriate resistor values.
 
-![schematic]](https://github.com/rupava/Solar-Power-Management-Using-STM32/blob/main/Schematic_SPMS_2_2022-11-20.png)
+![schematic](https://github.com/rupava/Solar-Power-Management-Using-STM32/blob/main/Schematic_SPMS_2_2022-11-20.png)
