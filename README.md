@@ -33,9 +33,9 @@ The STM32 board has a MAX ADC input voltage limit of 5V. To read voltage values 
 Where _Vout_ should be 5V and _Vs_ should be the Maximum value of voltage you plan to input for measurement.
 Therefore, for our resistors -
 
-R1 = 30K Ohm, R2 = 7.5K Ohm and Vs = 25V.
+_R1 = 30K Ohm, R2 = 7.5K Ohm and Vs = 25V_
 
-5 = (25*30000)/(30000+7500)
+_5 = (25*30000)/(30000+7500)_
 
 And the equation checks out well for the voltage divider.
 
