@@ -69,7 +69,7 @@ If you want to change when the High Temperature Alert LED triggers, make changes
 ```
 if(temp>60){
 		  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1,GPIO_PIN_SET);
-	  }
+	}
 ```
 
 ## Schematic:
